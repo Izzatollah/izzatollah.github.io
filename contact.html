@@ -1,95 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
-    <link rel="stylesheet" href="css/bootstrap.css"><link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
-   <header>
-      <div class="container">
-          <div class="logo ">
-           <h1>Amani</h1>
-       </div>
-      </div>
-       
-       
-       <nav class="main-menu">
-         <div class="container">
-          <ul class="nav">
-              <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
-              <li  class="nav-item"><a href="about.html" class="nav-link">about</a></li>
-              <li class="nav-item"><a href="project.html" class="nav-link">porject</a></li>
-              <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
-          </ul> 
-          </div>
-       </nav>
-   </header>
-   
-   <main>
-       
-       <section class="container">
-           <div class="page-title">
-           </div>
-       </section>
-       
-   </main>
-   
-  
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10">
+                    <div class="logo  ">
+                        <h1>Amani</h1>
+                    </div>
+                </div>
+                <div class="col-sm-2 burger-menu">
+                    <a href="#"> menu  <i class="fa fa-bars" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <nav class="main-menu">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link">porject</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container ">
+
+        <section class="container">
+            <div class="page-title">
+            </div>
+        </section>
+
  
 
-<!--Contact Form-->
-<form class="container">
 
-    <p class="h5 text-center mb-4">Write to me</p>
+<div class="row">
+     <!--Contact Form-->
+    <form >
 
-    <div class="md-form">
-        <i class="fa fa-user prefix grey-text"></i>
-        <input type="text" id="form3" class="form-control" mdbActive>
-        <label for="form3">Your name</label>
-    </div>
+        <p class="h5 text-center mb-4">Write to me</p>
 
-    <div class="md-form">
-        <i class="fa fa-envelope prefix grey-text"></i>
-        <input type="text" id="form2" class="form-control" mdbActive>
-        <label for="form2">Your email</label>
-    </div>
+        <div class="md-form col-sm-12 col-md-6">
+            <i class="fa fa-user prefix grey-text"></i>
+            <input type="text" id="form3" class="form-control" mdbActive>
+            <label for="form3">Your name</label>
+        </div>
 
-    <div class="md-form">
-        <i class="fa fa-tag prefix grey-text"></i>
-        <input type="text" id="form32" class="form-control" mdbActive>
-        <label for="form34">Subject</label>
-    </div>
+        <div class="md-form col-sm-12 col-md-6">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <input type="text" id="form2" class="form-control" mdbActive>
+            <label for="form2">Your email</label>
+        </div>
 
-    <div class="md-form">
-        <i class="fa fa-pencil prefix grey-text"></i>
-        <textarea type="text" id="form8" class="md-textarea" style="height: 100px" mdbActive></textarea>
-        <label for="form8">Your message</label>
-    </div>
+        <div class="md-form col-sm-12 col-md-6">
+            <i class="fa fa-tag prefix grey-text"></i>
+            <input type="text" id="form32" class="form-control" mdbActive>
+            <label for="form34">Subject</label>
+        </div>
 
-    <div class="text-center">
-        <button class="btn btn-unique waves-light" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
-    </div>
+        <div class="md-form col-sm-12 col-md-6">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <textarea type="text" id="form8" class="md-textarea" style="height: 100px" mdbActive></textarea>
+            <label for="form8">Your message</label>
+        </div>
 
-</form>
-<!--Contact Form-->
+        <div class="text-center">
+            <button class="btn btn-unique waves-light" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+        </div>
 
-<map class="container">
-                                      <center>
+    </form>
+    <!--Contact Form-->
+</div>
 
+   
+
+    <map class="container">
+          <div class="row">
+              
                 <h2>Heimeliweg 4. 8952 schlieren</h2>
 
-                         <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.8540336812307!2d8.435004215666773!3d47.39528081054504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900c6d229679fb%3A0x1c5acbcd6f19b9d3!2sHeimeliweg+4%2C+8952+Schlieren!5e0!3m2!1sen!2sch!4v1506861346865" width="1400" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+                       <div class="col sm-12">
+                       <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.8540336812307!2d8.435004215666773!3d47.39528081054504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900c6d229679fb%3A0x1c5acbcd6f19b9d3!2sHeimeliweg+4%2C+8952+Schlieren!5e0!3m2!1sen!2sch!4v1506861346865" width="1400" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></p>
     
+                       </div>  
+          </div>                    
 
-</center>
+
+ 
     </map>
-<footer>
-      <p>copy right 2017</p> 
-       
-   </footer>
-   
-   
-    </body>
-</html>
     
+       </main>
+    <footer>
+        <footer>
+            <!--Footer-->
+            <footer class="page-footer indigo center-on-small-only pt-0 black">
+
+                <!--Footer Links-->
+                <div class="container">
+
+                    <!--First row-->
+                    <div class="row">
+
+                        <!--First column-->
+                        <div class="col-md-12">
+
+                            <div class="footer-socials mb-5 flex-center">
+
+                                <!--Facebook-->
+                                <a class="icons-sm fb-ic black"><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
+                                <!--Twitter-->
+                                <a class="icons-sm tw-ic"><i class="fa fa-twitter fa-lg white-text mr-md-4"> </i></a>
+                                <!--Google +-->
+                                <a class="icons-sm gplus-ic"><i class="fa fa-google-plus fa-lg white-text mr-md-4"> </i></a>
+                                <!--Linkedin-->
+                                <a class="icons-sm li-ic"><i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i></a>
+                                <!--Instagram-->
+                                <a class="icons-sm ins-ic"><i class="fa fa-instagram fa-lg white-text mr-md-4"> </i></a>
+                                <!--Pinterest-->
+                                <a class="icons-sm pin-ic"><i class="fa fa-pinterest fa-lg white-text"> </i></a>
+                            </div>
+                        </div>
+                        <!--/First column-->
+                    </div>
+                    <!--/First row-->
+                </div>
+                <!--/Footer Links-->
+
+                <!--Copyright-->
+                <div class="footer-copyright">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+                <!--/Copyright-->
+
+            </footer>
+
+            <!--footer-->
+
+        </footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

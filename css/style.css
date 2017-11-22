@@ -1,10 +1,8 @@
 body {
     background: lightwhite;
-      height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-
+}
+a, a:visited {
+    color: #444;
 }
 .logo {
     padding: 20px;
@@ -13,9 +11,18 @@ body {
 .logo h1 {
     color: #222;
 }
+
+.burger-menu {
+    display: block;
+    padding: 10px;
+    }
  
 .main-menu {
     background: black;
+    
+}
+.nav {
+   display: none;
 }
 .main-menu a:hover {
     color: white;
@@ -33,71 +40,42 @@ body {
     margin: 5px;
     border-radius: 5px;
 }
+
+.main-menu .active {
+   display: block;
+}
 .md-textarea {
     width: 700px;
     height: 200px;
 }
 
-        
 
 footer {
     background: black;
     height: 50px;
     color: white;
     text-align: center;
+    padding-top: 15px;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
-}
-.bgimg-1 {
-  background-image: url("../5.jpg");
-  min-height: 100%;
-}
 
-.bgimg-2 {
-  background-image: url("../5.jpg");
-  min-height: 400px;
-}
 
-.bgimg-3 {
-  background-image: url("../5.jpg");
-  min-height: 400px;
+@media screen and (min-width: 900px){
+    
+   .nav {
+   display: block;
 }
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
+    
+    .nav ul {
+        display: inline-block;
     }
+    
+    .main-menu li {
+        display: inline-block;
+    }
+    .burger-menu {
+        display: none;
+    }
+    
 }
